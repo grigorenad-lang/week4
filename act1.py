@@ -1,4 +1,6 @@
-
+# custom_functions.py
+# This program simulates a text-based adventure game with functions
+# to respond to user input based on what they hear or see.
 
 def listen():
     """
