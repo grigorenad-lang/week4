@@ -8,6 +8,7 @@ def listen():
     sound = input("What sound did you hear?\n")
     print(f"\nThat was a loud {sound}!")
 
+
 def identify():
     """
     Ask what lies ahead and advise if it's a large boulder.
@@ -18,11 +19,11 @@ def identify():
     else:
         print("\nWe will be fine.")
 
+
 def escape_by(plan):
     """
     Decide if a given escape plan will work.
     """
-    plan = input("What escape plan would you like?\n")
     if plan == "jumping over":
         print("We cannot escape that way! The boulder is too big!")
     elif plan == "running around":
@@ -32,12 +33,13 @@ def escape_by(plan):
     else:
         print("We cannot escape that way! The boulder is in the way!")
 
+
 # Only auto-run the required escape tests.
 # (The input-based functions are left commented so the script doesn't pause.)
-
-escape_by("jumping over")
-escape_by("running around")
-escape_by("cross bridge ahead")
+if escape_by() plan == "_main_":
+    escape_by("jumping over")
+    escape_by("running around")
+    escape_by("cross bridge ahead")
     # To test these interactively, uncomment:
     # listen()
     # identify()
